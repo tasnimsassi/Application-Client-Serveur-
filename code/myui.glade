@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="MyWindow">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">projet linux </property>
+    <property name="default-width">800</property>
+    <property name="default-height">400</property>
+    <signal name="destroy" handler="exit_app" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fix">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+
+
+        <child>
+          <object class="GtkLabel" id="MyLabel">
+            <property name="width-request">80</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Bienvenue ! Projet malek et tasnim </property>
+
+
+            <attributes>
+              <attribute name="font-desc" value="Z003 Bold Italic 10"/>
+              <attribute name="style" value="oblique"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="25840"/>
+
+                  <attribute name="foreground" value="#808080"/> <!-- Couleur purple -->
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">239</property>
+            <property name="y">20</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="tcp">
+            <property name="label" translatable="yes">Communication TCP </property>
+            <property name="width-request">100</property>
+            <property name="height-request">0</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="tcp_clicked_cb" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">496</property>
+            <property name="y">308</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="MyLabel1">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="tooltip-text" translatable="yes">cliquer !</property>
+            <property name="label" translatable="yes">Pour utliser la communication TCP :</property>
+            <attributes>
+              <attribute name="font-desc" value="FreeSerif Bold Italic 10"/>
+              <attribute name="size" value="20480"/>
+                <attribute name="font-desc" value="FreeSerif Bold Italic 10"/>
+    <attribute name="style" value="normal"/>
+    <attribute name="weight" value="bold"/>
+    <attribute name="size" value="20480"/>
+    <attribute name="foreground" value="#87CEEB"/> <!-- Choisissez la couleur de texte ici -->
+
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">39</property>
+            <property name="y">285</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="MyLabel2">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="tooltip-text" translatable="yes">cliquer !</property>
+            <property name="label" translatable="yes">Pour utliser la communication TUBE :</property>
+            <attributes>
+              <attribute name="font-desc" value="FreeSerif Bold Italic 10"/>
+              <attribute name="size" value="20480"/>
+                  <attribute name="style" value="normal"/>
+    <attribute name="weight" value="bold"/>
+    <attribute name="size" value="20480"/>
+    <attribute name="foreground" value="#87CEEB"/> <!-- Choisissez la couleur de texte ici -->
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">39</property>
+            <property name="y">353</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="pipe">
+            <property name="label" translatable="yes">Communication PIPE</property>
+            <property name="width-request">100</property>
+            <property name="height-request">0</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_pipe_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">496</property>
+            <property name="y">374</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="MyLabel3">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">    ce mini projet a pour objectif de developper deux applications clients/serveur
+            en utilisant les sockets a travers differentes methodes de communication .</property>
+            <attributes>
+              <attribute name="font-desc" value="Chilanka Bold 10"/>
+              <attribute name="style" value="oblique"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="13312"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">49</property>
+            <property name="y">79</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="MyLabel4">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="tooltip-text" translatable="yes">cliquer !</property>
+            <property name="label" translatable="yes">Pour utliser la communication UDP :</property>
+            <attributes>
+              <attribute name="font-desc" value="FreeSerif Bold Italic 10"/>
+              <attribute name="size" value="20480"/>
+                  <attribute name="style" value="normal"/>
+    <attribute name="weight" value="bold"/>
+    <attribute name="size" value="20480"/>
+    <attribute name="foreground" value="#87CEEB"/> <!-- Choisissez la couleur de texte ici -->
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">39</property>
+            <property name="y">217</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="udp">
+            <property name="label" translatable="yes">Communication UDP</property>
+            <property name="width-request">100</property>
+            <property name="height-request">0</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="udp_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">496</property>
+            <property name="y">242</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="MyLabel5">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Insérez le nombre de clients souhaités (Max 10)
+pour la communication TCP et TUBE </property>
+            <attributes>
+              <attribute name="font-desc" value="Chilanka Bold 10"/>
+              <attribute name="style" value="oblique"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="13312"/>
+              <attribute name="foreground" value="#808080"/> <!-- Couleur purple -->
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">164</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbrclient">
+            <property name="width-request">100</property>
+            <property name="height-request">0</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="placeholder-text" translatable="yes">Saisie le nbr de clients</property>
+            <property name="input-purpose">number</property>
+          </object>
+          <packing>
+            <property name="x">497</property>
+            <property name="y">185</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

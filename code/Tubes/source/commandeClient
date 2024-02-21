@@ -1,0 +1,4 @@
+gcc -c Handlers_Cli.c
+gcc -c Client.c
+gcc Handlers_Cli.o Client.o -o clien.out
+./clien.out

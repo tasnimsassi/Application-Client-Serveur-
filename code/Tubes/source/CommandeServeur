@@ -1,0 +1,4 @@
+gcc -c Handlers_Serv.c
+gcc -c Serveur.c
+gcc Handlers_Serv.o Serveur.o -o Serv.out
+./Serv.out
